@@ -1,0 +1,22 @@
+{
+  "name": "smart-retail-admin-dashboard",
+  "version": "1.0.0",
+  "description": "Admin Dashboard for Smart Retail Cart",
+  "private": true,
+  "dependencies": {
+    "axios": "^1.6.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.0",
+    "recharts": "^2.10.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^7.3.1"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  }
+}

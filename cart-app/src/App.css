@@ -1,0 +1,107 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.app-header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.cart-info {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.home-button {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.home-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.alert-badge {
+  background: #ff4444;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.tab-nav {
+  display: flex;
+  background: white;
+  border-bottom: 2px solid #e0e0e0;
+  overflow-x: auto;
+}
+
+.tab-nav button {
+  flex: 1;
+  padding: 1rem;
+  border: none;
+  background: white;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #666;
+  transition: all 0.2s;
+  border-bottom: 3px solid transparent;
+}
+
+.tab-nav button:hover {
+  background: #f5f5f5;
+  color: #667eea;
+}
+
+.tab-nav button.active {
+  color: #667eea;
+  border-bottom-color: #667eea;
+  background: #f8f9ff;
+}
+
+.app-main {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .app-header {
+    padding: 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .tab-nav {
+    flex-wrap: nowrap;
+  }
+
+  .tab-nav button {
+    min-width: 100px;
+    font-size: 0.875rem;
+    padding: 0.75rem;
+  }
+
+  .app-main {
+    padding: 1rem;
+  }
+}
